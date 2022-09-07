@@ -15,6 +15,7 @@ class RecommendationCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 400,
+      height: 150,
       padding: EdgeInsets.all(defaultPadding),
       color: secondaryColor,
       child: Column(

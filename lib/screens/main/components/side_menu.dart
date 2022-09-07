@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_profile/constants.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'area_info_text.dart';
 import 'coding.dart';
@@ -26,16 +27,12 @@ class SideMenu extends StatelessWidget {
                 child: Column(
                   children: [
                     AreaInfoText(
-                      title: "Residence",
-                      text: "Bangladesg",
+                      title: "Country",
+                      text: "Viet Nam",
                     ),
                     AreaInfoText(
                       title: "City",
-                      text: "Dhaka",
-                    ),
-                    AreaInfoText(
-                      title: "Age",
-                      text: "22",
+                      text: "Vinh Long",
                     ),
                     Skills(),
                     SizedBox(height: defaultPadding),
@@ -70,15 +67,17 @@ class SideMenu extends StatelessWidget {
                         children: [
                           Spacer(),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () => _launchUrl(
+                                'https://www.linkedin.com/in/thanh-nh%C3%A3-33a8b1176/'),
                             icon: SvgPicture.asset("assets/icons/linkedin.svg"),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () => _launchUrl(
+                                'https://github.com/thanhnha241199/'),
                             icon: SvgPicture.asset("assets/icons/github.svg"),
                           ),
                           IconButton(
-                            onPressed: () {},
+                            onPressed: () => _launchUrl('https://twitter.com/'),
                             icon: SvgPicture.asset("assets/icons/twitter.svg"),
                           ),
                           Spacer(),
@@ -93,5 +92,12 @@ class SideMenu extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  Future<void> _launchUrl(String url) async {
+    final Uri _url = Uri.parse(url);
+    if (!await launchUrl(_url)) {
+      throw 'Could not launch $_url';
+    }
   }
 }

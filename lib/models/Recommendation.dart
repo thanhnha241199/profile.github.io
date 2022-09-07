@@ -6,27 +6,33 @@ class Recommendation {
 
 final List<Recommendation> demo_recommendations = [
   Recommendation(
-    name: "Kolapo Obanewa",
-    source: "Linkedin",
+    name: "SURAT",
+    source: "UPWORK",
     text:
-        "I have had the pleasure of working with Anwar on two flutter projects and what strikes me the most about his work is his ability to write clean and reusable codes with best practices. He is hardworking and makes it so easy to transcribe ideas into beautiful and testable flutter apps. He is a Flutter/Dart gem and has my highest recommendation",
+        "Amazing person, Done the job successfully before time                                                                                                      ",
   ),
   Recommendation(
-    name: "Reza Shahbazi",
-    source: "Linkedin",
+    name: "Tel aviv",
+    source: "UPWORK",
     text:
-        "Abu is great asset for any organization. It's a true pleasure working with him at TakeIn. His flutter skill is amazing as well as his professionalism and being a good team player. Abu's problem solving skill is also one of his great skills.",
+        "I really like this seller, he was always responsive for what i wanted. I recommend him for any project you wish to take him. Super professional. Thanks!",
   ),
   Recommendation(
-    name: "Diadem",
-    source: "YouTube",
+    name: "Jhang Sadr",
+    source: "UPWORK",
     text:
-        "I like your way you doing your project and you taught us. After I watch this I like and hit the subscribe button and then watch your video playlist one by one!! Within three hours, I learned a lot! I share your channel in my college WhatsApp group!",
+        "Responsible in Working On Perfect Time                                                                                                                     ",
   ),
   Recommendation(
-    name: "Roshan Shetty",
-    source: "YouTube",
+    name: "SURAT",
+    source: "UPWORK",
     text:
-        "Very straightforward, professional and also the best flutter videos in the youtube! It will be great if you add some comments to your steps with 0.5 seconds pause before implementing this step. By meaning of steps, I mean not the basic, but structural steps, like 10-20 steps per video. However, thank you very much!",
+        "Amazing person done the job perfectly before time.                                                                                                        ",
+  ),
+  Recommendation(
+    name: "Surat",
+    source: "UPWORK",
+    text:
+        "nice work                                                                                                                                                 ",
   ),
 ];
